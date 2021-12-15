@@ -1,86 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam-pedia - A Sam Courtenay Website</title>
-    <link rel="stylesheet" href="homepage.css">
-</head>
-<body>
-    <div id="page-container">
-        <div id="content-wrap">
-            <header id="header">
-                <a href="#intro">Intro</a>
-                <a href="#aboutme">About Me</a> <!-- Required -->
-                <a href="#contact">Contact</a> <!-- Required -->
-                <a href="">Forbidden Lore</a>
-            </header>
-            <p class="central-paragraph" id="intro">Intro</p> <!-- This is the "landing page" -->
-                <div class="central-paragraph">
-                    <p>
-                        Welcome to my GitHub user site! I'm exploring different ways to make this page fun and interesting so theres a good chance this will look different the next time you visit.
-                    </p>
-                </div>
-            <p class="central-paragraph" id="aboutme">About Me</p> <!-- This is the "About Me" section with required resume -->
-                <div>
-                    <p class="central-paragraph">Placeholder text describing my background and what I'm doing.</p>
-                </div>
-                <div class="central-paragraph">
-                    <a href="samcourtenayresume.pdf" download="">Learn more about my unique skill set by downloading my resume.</a>
-                </div>
-            <p class="central-paragraph">Practicing Forms</p>
-                <div id="first-form">
-                    <form action="">
-                        <p>First Name:
-                            <input name="first-name" placeholder="Enter your first name here.">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sam-pedia - A Sam Courtenay Website</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="homepage.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-custom navbar-light">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link-custom nav-link" href="#intro">Intro <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link-custom nav-link" href="#aboutme">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link-custom nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+                    <h4 id="intro">Intro</h4> <!-- This is the "landing page" -->
+                    <div>
+                        <p>
+                            Welcome to my GitHub user site! I'm exploring different ways to make this page fun and interesting so theres a good chance this will look different the next time you visit.
                         </p>
-                    </form>
+                        <p>Some features/concepts I'm hoping to work on are:</p>
+                        <ul>
+                            <li>Interactive Forms</li>
+                            <li>Better Styling</li>
+                            <li>A Meme Generator</li>
+                            <li>A Memory Game</li>
+                        </ul>
+                    </div>
+
                 </div>
-            <p class="central-paragraph">Table of Interests</p>
-                <div>
-                    <table class="interests-table">
-                        <caption>Official Table of Interests</caption>
-                        <thead>
-                            <tr>
-                                <th>Interest</th>
-                                <th>Explanation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Brazilian Jiu Jitsu</td>
-                                <td>Style of grappling martial art</td>
-                            </tr>
-                            <tr>
-                                <td>Mycology</td>
-                                <td>Study of mushrooms</td>
-                            </tr>
-                            <tr>
-                                <td>Reading</td>
-                                <td>The action or skill of reading written or printed matter silently or aloud</td>
-                            </tr>
-                            <tr>
-                                <td>Filler 1</td>
-                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt reprehenderit nemo enim omnis. Pariatur asperiores voluptates incidunt sequi voluptatem, optio perferendis, ducimus amet quibusdam obcaecati, temporibus nulla consequuntur itaque corrupti?</td>
-                            </tr>
-                            <tr>
-                                <td>Filler 2</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum voluptatum debitis quos ex id consequuntur, accusamus unde commodi, nihil laborum quaerat totam non voluptatem et dolorum repudiandae, veritatis itaque.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            <p class="central-paragraph" id="contact">Contact</p> <!-- This is the "Contact page" -->
-            <footer id="footer">
-                <a href="#intro">Intro</a>
-                <a href="">About Me</a> <!-- Required -->
-                <a href="">Contact</a> <!-- Required -->
-                <a href="">Forbidden Lore</a>
-            </footer>
+            </div>
         </div>
-    </div>
-</body>
+        
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+                    <h4 id="aboutme">About Me</h4> <!-- This is the "About Me" section with required resume -->
+                    <div>
+                        <p>Placeholder text describing my background and what I'm doing.</p>
+                    </div>
+                    <div>
+                        <a href="samcourtenayresume.pdf" download="">Learn more about my unique skill set by downloading my resume.</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+                    <h4>Practicing Forms</h4>
+                    <div id="first-form">
+                        <form action="">
+                            <p>First Name:
+                                <input name="first-name" placeholder="Enter your first name here.">
+                            </p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+                    <p>Table of Interests</p>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Interest</th>
+                                    <th>Explanation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Brazilian Jiu Jitsu</td>
+                                    <td>Style of grappling martial art</td>
+                                </tr>
+                                <tr>
+                                    <td>Mycology</td>
+                                    <td>Study of mushrooms</td>
+                                </tr>
+                                <tr>
+                                    <td>Reading</td>
+                                    <td>The action or skill of reading written or printed matter silently or aloud</td>
+                                </tr>
+                                <tr>
+                                    <td>Filler 1</td>
+                                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt reprehenderit nemo enim omnis. Pariatur asperiores voluptates incidunt sequi voluptatem, optio perferendis, ducimus amet quibusdam obcaecati, temporibus nulla consequuntur itaque corrupti?</td>
+                                </tr>
+                                <tr>
+                                    <td>Filler 2</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum voluptatum debitis quos ex id consequuntur, accusamus unde commodi, nihil laborum quaerat totam non voluptatem et dolorum repudiandae, veritatis itaque.</td>
+                                </tr>
+                                <tr>
+                                    <td>Filler 3</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum voluptatum debitis quos ex id consequuntur, accusamus unde commodi, nihil laborum quaerat totam non voluptatem et dolorum repudiandae, veritatis itaque.</td>
+                                </tr>
+                                <tr>
+                                    <td>Filler 4</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum voluptatum debitis quos ex id consequuntur, accusamus unde commodi, nihil laborum quaerat totam non voluptatem et dolorum repudiandae, veritatis itaque.</td>
+                                </tr>
+                                <tr>
+                                    <td>Filler 5</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum voluptatum debitis quos ex id consequuntur, accusamus unde commodi, nihil laborum quaerat totam non voluptatem et dolorum repudiandae, veritatis itaque.</td>
+                                </tr>
+                                <tr>
+                                    <td>Filler 6</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eum voluptatum debitis quos ex id consequuntur, accusamus unde commodi, nihil laborum quaerat totam non voluptatem et dolorum repudiandae, veritatis itaque.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+                    <h4 class="central-paragraph" id="contact">Contact</h4> <!-- This is the "Contact page" -->
+                    <span>
+                        If you'd like to reach me, the best way to do that is to connect with me on LinkedIn
+                    </span>
+                    <span>
+                        <a href="https://www.linkedin.com/in/smcourtenay/">here.</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">
+
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </body>
 </html>
 
 <!-- To Do list:
